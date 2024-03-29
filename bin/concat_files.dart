@@ -1,19 +1,15 @@
 import 'dart:io';
-import 'package:args/args.dart';
 import 'package:path/path.dart' as path;
 
-Future<void> main(List<String> arguments) async {
-  final ArgParser parser = ArgParser();
-  ArgResults argResults = parser.parse(arguments);
-
+Future<void> main(List<String> args) async {
   // Checking for the root folder from positional arguments
-  if (argResults.rest.isEmpty) {
+  if (args.length != 1) {
     print('Usage: dart concat_files.dart <folder>');
     print('Example: dart concat_files.dart /path/to/your/top/level/folder');
     exit(1);
   }
 
-  final String root = argResults.rest[0];
+  final String root = args[0];
   await concatenateFiles(root);
 }
 

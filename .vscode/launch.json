@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "dart_application_4",
+      "name": "concat_files",
       "request": "launch",
       "type": "dart",
       "args": ["test-folder"]
