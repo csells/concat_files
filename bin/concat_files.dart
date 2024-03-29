@@ -8,8 +8,8 @@ Future<void> main(List<String> arguments) async {
 
   // Checking for the root folder from positional arguments
   if (argResults.rest.isEmpty) {
-    print('Usage: dart concat.dart <folder>');
-    print('Example: dart concat.dart /path/to/your/top/level/folder');
+    print('Usage: dart concat_files.dart <folder>');
+    print('Example: dart concat_files.dart /path/to/your/top/level/folder');
     exit(1);
   }
 
