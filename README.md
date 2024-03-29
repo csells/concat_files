@@ -1,8 +1,9 @@
 # Usage
 
+```shell
 Usage: dart concat.dart <folder>
 Example: dart concat.dart /path/to/your/top/level/folder
-
+```
 # Output Example
 
 File "/source/com/foo/bar.java":
