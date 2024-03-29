@@ -1,0 +1,1 @@
+bar.java content
